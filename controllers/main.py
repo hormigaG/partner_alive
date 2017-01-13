@@ -31,6 +31,10 @@ class partner_alive(http.Controller):
         error = {}
         default = {}
         if partner.check_alive_server== True and  partner.alive_public_id== alive_public_id : 
-            _logger.info(request)
-            _logger.info(request.remote_addr)
-            return request.remote_addr
+            wsgienv = req.httprequest.environ
+
+
+            _logger.info(wsgienv['HTTP_HOST'])
+            return wsgienv['HTTP_HOST']
+
+

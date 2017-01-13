@@ -21,7 +21,7 @@
 
 
 {
-    'name': 'partner Alive',
+    'name': 'Partner Alive',
     'version': '0.1',
     'category': 'server tools',
     'description': """

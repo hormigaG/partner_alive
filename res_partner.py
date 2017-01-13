@@ -45,4 +45,4 @@ class res_partner(models.Model):
     check_alive_server = fields.Boolean('check alive')
     alive_public_id = fields.Char('Id alive')  
     alive_ip = fields.Char('Ultima IP')  
-    alive_datetime = fields.DateTime('Ultimo ping ')  
+    alive_datetime = fields.Datetime('Ultimo ping ')  
